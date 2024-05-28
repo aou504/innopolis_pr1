@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Введите два целых числа:");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        int sum = num1 + num2;
+        int diff = Math.Abs(num1 - num2);
+        
+        Console.WriteLine($"Сумма чисел: {sum}");
+        Console.WriteLine($"Разница между числами: {diff}");
+
+        int min = Math.Min(num1, num2);
+        int max = Math.Max(num1, num2);
+
+        Console.Write("Ряд цифр от минимального до максимального числа: ");
+        for (int i = min; i <= max; i++)
+        {
+            Console.Write(i + " ");
+        }
+    }
+}
